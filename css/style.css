@@ -1,0 +1,184 @@
+body{
+	margin: 0;
+	margin-top: 70px;
+}
+
+#one{
+	background-color: #D5BBB1;
+	padding:20px;
+}
+
+#two{
+	clear: both;
+	background-color: #D5BBB1;
+	padding:20px;
+}
+
+nav{
+	position: fixed;
+	width: 100%;
+	top: 0;
+	left: 0;
+	text-align: center;
+	font-weight: 700;
+}
+
+nav ul li{
+	display: inline-block;
+	margin: 10px;
+	margin-left: 120px;
+}
+
+ul li{
+	list-style-type: none;
+}
+
+ul li a{
+	text-decoration: none;
+}
+
+a{
+	list-style-type: none;
+	text-decoration: none;
+	font-family: 'Oswald', sans-serif;
+	font-weight: bold;
+	font-size: 20px;
+}
+
+#heading{
+	color: #E84C69;
+	font-family: 'Oswald', sans-serif;
+	font-size: 50px;
+	text-align: center;
+	margin-top: 200px;
+}
+
+#about{
+	color: #E76D83;
+	font-family: 'Oswald', sans-serif;
+}
+
+#gallery{
+	color: #E76D83;
+	font-family: 'Oswald', sans-serif;
+}
+
+.box{
+	float: left;
+	padding: 20px;
+}
+
+#contact{
+	clear: both;
+	color: #E76D83;
+	font-family: 'Oswald', sans-serif;
+}
+
+#media{
+	color: #E76D83;
+	font-family: 'Oswald', sans-serif;
+}
+
+footer{
+	clear: both;
+}
+
+/*Animate*/
+
+.one:nth-of-type(1){
+	transition: 2000ms;
+}
+
+.one:nth-of-type(1):hover{
+	transform: scale(2);
+};
+
+#one:nth-of-type(1):hover{
+	background-image: url(..//images/1.jpg);
+	width: 500px;
+	height: 550px;
+};
+
+/*Nav items*/
+
+nav > ul > li{
+	display: inline-block;
+	padding: 0 30px;
+	vertical-align: top;
+}
+
+/*Submenu dropdown*/
+
+nav ul ul{
+	display:none;
+	position: static;
+}
+
+nav ul li:hover ul{
+	display: block;
+}
+nav ul ul li{
+	display: block;
+	vertical-align: top;
+	list-style-type: none;
+	padding: 8px;
+}
+
+nav a{
+	text-decoration: none;
+	color: #E76D83;	
+}
+
+nav a:hover{
+	color: #5C576B;
+	background-color: pink;
+}
+
+nav button{
+	display: none;
+}
+
+/*.now{
+	text-decoration: underline;
+}*/
+
+section{
+	margin-top: -50px;
+	padding-top: 50px;
+}
+
+#menu-button{
+	display: none;
+	position: fixed;
+	top: 0;
+	right: 0;
+	z-index: 1;
+}
+
+/*Media Queries*/
+
+@media(max-width: 768px){
+	nav ul{
+		display: none;
+	}
+	nav li{
+		display: block;
+	}
+	#menu-button{
+		display: block;
+	}
+	body{
+		margin-top: 0;
+	}
+
+	nav ul ul li{
+		padding: 0;
+		font-size: .8em;
+		display: none;
+		list-style-type: none;
+	}
+	
+	#menu-button{
+		display: block;
+	}
+}
