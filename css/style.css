@@ -6,11 +6,21 @@ body{
 #one{
 	background-color: #D5BBB1;
 	padding:20px;
+	margin-bottom: 10px;
 }
 
 #two{
+	padding:20px;
+}
+
+#three{
 	clear: both;
 	background-color: #D5BBB1;
+	padding:20px;
+	margin-bottom: 10px;
+}
+
+#four{
 	padding:20px;
 }
 
