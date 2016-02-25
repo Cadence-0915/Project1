@@ -11,6 +11,7 @@ body{
 
 #two{
 	padding:20px;
+	clear: both;
 }
 
 #three{
@@ -22,6 +23,10 @@ body{
 
 #four{
 	padding:20px;
+}
+
+.container{
+	.content{ margin: 0 auto; width: 900px; }
 }
 
 nav{
@@ -39,8 +44,6 @@ nav ul li{
 	display: inline-block;
 	margin: 1%;
 	margin-left: 3%;
-	margin-bottom: -.9%;
-	margin-top: -.9%;
 	padding: 1%;
 }
 
@@ -65,8 +68,8 @@ a{
 	font-family: 'Oswald', sans-serif;
 	font-size: 50px;
 	text-align: center;
-	margin-bottom: 90px; 
-	margin-top: 90px;
+	margin-bottom: 70px; 
+	margin-top: 100px;
 	z-index: -1;
 }
 
@@ -101,12 +104,6 @@ footer{
 }
 /*Parallax*/
 
-
-
-#media{
-	
-}
-
 /*Animate*/
 
 .one:nth-of-type(1){
@@ -124,6 +121,13 @@ footer{
 };
 
 /*Nav items*/
+nav li{
+	vertical-align: top;
+}
+
+nav ul{
+	padding: 0;
+}
 
 nav > ul > li{
 	display: inline-block;
@@ -135,7 +139,9 @@ nav > ul > li{
 
 nav ul ul{
 	display:none;
-	position: static;
+	position: fixed;
+	background-color: #7EA6DD;
+	padding-left: 1px;
 }
 
 nav ul li:hover ul{
@@ -145,7 +151,7 @@ nav ul ul li{
 	display: block;
 	vertical-align: top;
 	list-style-type: none;
-	padding: 8px;
+	padding: 10px;
 }
 
 nav a{
@@ -161,10 +167,6 @@ nav a:hover{
 nav button{
 	display: none;
 }
-
-/*.now{
-	text-decoration: underline;
-}*/
 
 section{
 	margin-top: -50px;
@@ -184,6 +186,9 @@ section{
 @media(max-width: 768px){
 	nav ul{
 		display: none;
+	}
+	nav ul li{
+		display: inline-block;
 	}
 	nav li{
 		display: block;
